@@ -25,7 +25,7 @@ import PackageDescription
 let package = Package(
     name: "OAuthSwift",
     products: [
-        .library(name: "OAuthSwift", targets: ["OAuthSwift"]),
+        .library(name: "OAuthSwift", type: .dynamic, targets: ["OAuthSwift"]),
     ],
     targets: [
         .target(name: "OAuthSwift", dependencies: [], path: "Sources"),
